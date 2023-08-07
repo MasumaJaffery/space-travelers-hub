@@ -8,6 +8,13 @@ const Header = () => (
           <img className="logo" alt="logo" src={logo} />
           <h2>Space Travelers&apos; Hub</h2>
         </div>
+        <div>
+          <ul className="navlist">
+            {/*
+       Later We include NavLinks Here
+      */}
+          </ul>
+        </div>
       </nav>
     </header>
   </div>
