@@ -10,7 +10,7 @@ function App() {
       <div>
         <Header />
         <Routes>
-          <Route path="" element={<Profile />} />
+          <Route path="/myprofile" element={<Profile />} />
         </Routes>
       </div>
     </Router>
