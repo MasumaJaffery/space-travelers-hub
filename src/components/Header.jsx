@@ -11,7 +11,7 @@ const Header = () => (
         </div>
         <div>
           <ul className="navlist">
-            <NavLink to="./myProfile">My Profile</NavLink>
+            <NavLink to="./myprofile">My Profile</NavLink>
           </ul>
         </div>
       </nav>
