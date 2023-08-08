@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import logo from './images/planet.png';
 
 const Header = () => (
@@ -10,9 +11,7 @@ const Header = () => (
         </div>
         <div>
           <ul className="navlist">
-            {/*
-       Later We include NavLinks
-      */}
+            <NavLink to="./">My Profile</NavLink>
           </ul>
         </div>
       </nav>
