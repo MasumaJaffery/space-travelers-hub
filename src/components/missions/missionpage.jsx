@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setMissions } from '../../redux/misionSlice';
+import '../Style/misionpage.css';
 
 const Missions = () => {
   const dispatch = useDispatch();
@@ -20,17 +21,24 @@ const Missions = () => {
     fetchMissions();
   }, []);
 
-  const missionItems = missions.map((mission) => (
-    <div key={mission.mission_id}>
-      <h3>{mission.mission_name}</h3>
-      <p>{mission.description}</p>
-    </div>
-  ));
-
   return (
     <div>
-      <h2>Missions</h2>
-      {missionItems}
+      <table className="mission-table">
+        <thead>
+          <tr>
+            <th>Mission Name</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          {missions.map((mission) => (
+            <tr className="mission-container" key={mission.mission_id}>
+              <td className="mission-title">{mission.mission_name}</td>
+              <td className="mission-description">{mission.description}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 };
