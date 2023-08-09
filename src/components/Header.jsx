@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import logo from './images/planet.png';
+import "./Style/misionpage.css";
 
 const Header = () => (
   <div className="Header">
@@ -11,8 +12,8 @@ const Header = () => (
         </div>
         <div>
           <ul className="navlist">
-            <NavLink to="./myprofile" className="active">My Profile</NavLink>
-            <NavLink to="/misions" className="active">Misions</NavLink>
+            <NavLink to="./myprofile" activeClassName="active">My Profile</NavLink>
+            <NavLink to="/misions" activeClassName="active">Misions</NavLink>
           </ul>
         </div>
       </nav>
