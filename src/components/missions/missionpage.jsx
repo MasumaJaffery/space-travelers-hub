@@ -1,9 +1,38 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { setMissions } from '../Redux/misionSlice';
 
-const MissionsPage = () => (
-  <div>
-    <h2>The Mission page</h2>
-  </div>
-);
+const Missions = () => {
+  const dispatch = useDispatch();
+  const missions = useSelector((state) => state.missions);
 
-export default MissionsPage;
+  const fetchMissions = async () => {
+    try {
+      const response = await fetch('https://api.spacexdata.com/v3/missions');
+      const data = await response.json();
+      dispatch(setMissions(data));
+    } catch (error) {
+      console.error('Error fetching missions:', error);
+    }
+  };
+
+  useEffect(() => {
+    fetchMissions();
+  }, []);
+
+  const missionItems = missions.map((mission) => (
+    <div key={mission.mission_id}>
+      <h3>{mission.mission_name}</h3>
+      <p>{mission.description}</p>
+    </div>
+  ));
+
+  return (
+    <div>
+      <h2>Missions</h2>
+      {missionItems}
+    </div>
+  );
+};
+
+export default Missions;
