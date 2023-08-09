@@ -26,7 +26,8 @@ li {
 .row,
 .g-0 {
   margin: 2rem;
-  border: 1px solid grey;
+  border: 1px solid rgb(196, 194, 194);
+  border-radius: 1%;
 }
 
 .card {
