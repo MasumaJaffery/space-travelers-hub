@@ -15,7 +15,7 @@
 .mission-table th,
 .mission-table td {
   padding: 8px;
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
 }
 
 .mission-table th {
@@ -23,7 +23,7 @@
 }
 
 .mission-table tr:nth-child(even) {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .mission-table tr:nth-child(odd) {
