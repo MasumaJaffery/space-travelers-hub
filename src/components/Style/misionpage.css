@@ -5,3 +5,27 @@
 .active {
   text-decoration: underline;
 }
+
+.mission-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #000;
+}
+
+.mission-table th,
+.mission-table td {
+  padding: 8px;
+  border: 1px solid #fff;
+}
+
+.mission-table th {
+  background-color: #f2f2f2;
+}
+
+.mission-table tr:nth-child(even) {
+  background-color: #fff;
+}
+
+.mission-table tr:nth-child(odd) {
+  background-color: #e9e9e9;
+}
