@@ -11,19 +11,18 @@ const Missions = () => {
   const dispatch = useDispatch();
   const missions = useSelector((state) => state.missions);
 
-  const fetchMissions = async () => {
-    try {
-      const response = await fetch('https://api.spacexdata.com/v3/missions');
-      const data = await response.json();
-      dispatch(setMissions(data));
-    } catch (error) {
-      console.error('Error fetching missions:', error);
-    }
-  };
-
   useEffect(() => {
+    const fetchMissions = async () => {
+      try {
+        const response = await fetch('https://api.spacexdata.com/v3/missions');
+        const data = await response.json();
+        dispatch(setMissions(data));
+      } catch (error) {
+        Error('Error fetching missions:', error);
+      }
+    };
     fetchMissions();
-  }, []);
+  }, [dispatch]);
 
   const handleJoinMission = (missionId) => {
     dispatch(joinMission({ missionId }));
