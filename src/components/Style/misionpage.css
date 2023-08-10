@@ -38,7 +38,10 @@
 }
 
 .not-member-badge {
-  background-color: solid rgb(65, 67, 65);
+  background-color: rgb(122, 126, 122);
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
 }
 
 .mission-status {
