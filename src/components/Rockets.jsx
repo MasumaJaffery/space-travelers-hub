@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getRockets } from '../redux/RocketSlice';
+import { getRockets, cancelReservation, reserveRocket } from '../redux/RocketSlice';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Rockets = () => {
@@ -35,9 +35,19 @@ const Rockets = () => {
                     <div className="col-md-8">
                       <div className="card-body">
                         <h3 className="card-title">{rocket.rocket_name}</h3>
-                        <p className="card-text">{rocket.description}</p>
                         <p className="card-text">
-                          <button type="button" className="btn btn-primary">Reservation</button>
+                          {rocket.description}
+                          <button
+                            type="button"
+                            className={rocket.reserved ? 'rockets__cancel-btn' : 'rockets__reserve-btn btn btn-primary'}
+                            onClick={() => {
+                              dispatch(rocket.reserved
+                                ? cancelReservation(rocket.id)
+                                : reserveRocket(rocket.id));
+                            }}
+                          >
+                            {rocket.reserved ? 'Cancel Reservation' : 'Reserve Rocket'}
+                          </button>
                         </p>
                       </div>
                     </div>
