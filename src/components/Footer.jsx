@@ -3,7 +3,7 @@ const Footer = () => (
     <footer>
       ©
       {'  '}
-      <a href="https://github.com/MasumaJaffery">@MasumaJaffery  </a>
+      <a href="https://github.com/MasumaJaffery">@MasumaJaffery</a>
       and
       {'  '}
       <a href="https://github.com/najibullahjafari">@NajibullahJafari</a>
