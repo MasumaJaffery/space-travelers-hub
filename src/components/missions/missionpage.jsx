@@ -1,6 +1,10 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { setMissions, joinMission, leaveMission } from '../../redux/misionSlice';
+import {
+  setMissions,
+  joinMission,
+  leaveMission,
+} from '../../redux/misionSlice';
 import '../Style/misionpage.css';
 
 const Missions = () => {
@@ -36,6 +40,7 @@ const Missions = () => {
           <tr>
             <th>Mission Name</th>
             <th>Description</th>
+            <th>Status</th>
             <th>Action</th>
           </tr>
         </thead>
@@ -44,7 +49,14 @@ const Missions = () => {
             <tr className="mission-container" key={mission.mission_id}>
               <td className="mission-title">{mission.mission_name}</td>
               <td className="mission-description">{mission.description}</td>
-              <td>
+              <td className="mission-status">
+                {mission.reserved ? (
+                  <span className="active-member-badge">Active Member</span>
+                ) : (
+                  <span className="not-member-badge">Not a Member</span>
+                )}
+              </td>
+              <td className="mission-actioin">
                 {mission.reserved ? (
                   <button
                     type="button"
