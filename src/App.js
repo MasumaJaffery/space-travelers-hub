@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Profile from './components/Profile';
 import Missions from './components/missions/missionpage';
 import Rockets from './components/Rockets';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/myprofile" element={<Profile />} />
           <Route path="/misions" element={<Missions />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
