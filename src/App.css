@@ -49,7 +49,14 @@ ul {
 }
 
 footer {
-  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: center;
+}
+
+.rockets__cancel-btn {
+  color: blue;
+  background-color: white;
+  border-radius: 4%;
+  border: 1px solid blue;
 }
