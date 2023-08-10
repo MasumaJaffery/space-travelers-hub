@@ -28,6 +28,8 @@ const misionSlice = createSlice({
   },
 });
 
+export const selectJoinedMissions = (state) => state.missions.filter((mission) => mission.reserved);
+
 export const { setMissions, joinMission, leaveMission } = misionSlice.actions;
 
 export default misionSlice.reducer;
