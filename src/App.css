@@ -52,3 +52,10 @@ footer {
   display: flex;
   justify-content: center;
 }
+
+.rockets__cancel-btn {
+  color: blue;
+  background-color: white;
+  border-radius: 4%;
+  border: 1px solid blue;
+}
