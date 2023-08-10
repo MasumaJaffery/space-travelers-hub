@@ -35,6 +35,7 @@
   padding: 5px;
   border-radius: 5px;
   color: white;
+  box-sizing: content-box;
 }
 
 .not-member-badge {
