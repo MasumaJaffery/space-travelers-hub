@@ -73,3 +73,10 @@ footer {
   margin-top: 0.8rem;
   margin-bottom: 0.8rem;
 }
+
+.Rockets-display {
+  margin: 2rem;
+  border: 1px solid grey;
+  border-radius: 1%;
+  padding: 2rem;
+}
