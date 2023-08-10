@@ -36,6 +36,9 @@ const Rockets = () => {
                       <div className="card-body">
                         <h3 className="card-title">{rocket.rocket_name}</h3>
                         <p className="card-text">
+                          <div className="btn-rocket">
+                            {rocket.reserved && <span className="rockets__badge">Reserved</span>}
+                          </div>
                           {rocket.description}
                         </p>
                         <div>
