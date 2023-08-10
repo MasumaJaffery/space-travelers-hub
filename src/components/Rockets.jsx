@@ -37,6 +37,8 @@ const Rockets = () => {
                         <h3 className="card-title">{rocket.rocket_name}</h3>
                         <p className="card-text">
                           {rocket.description}
+                        </p>
+                        <div>
                           <button
                             type="button"
                             className={rocket.reserved ? 'rockets__cancel-btn' : 'rockets__reserve-btn btn btn-primary'}
@@ -48,7 +50,7 @@ const Rockets = () => {
                           >
                             {rocket.reserved ? 'Cancel Reservation' : 'Reserve Rocket'}
                           </button>
-                        </p>
+                        </div>
                       </div>
                     </div>
                   </div>
