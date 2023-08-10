@@ -31,12 +31,20 @@
 }
 
 .active-member-badge {
-  color: green;
+  background-color: rgb(44, 150, 145);
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
 }
+
+.not-member-badge {
+  background-color: solid rgb(65, 67, 65);
+}
+
 .mission-status {
   width: 150px;
 }
 
-.mission-actioin{
+.mission-actioin {
   width: 150px;
 }
