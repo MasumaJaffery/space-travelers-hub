@@ -11,8 +11,16 @@ const misionSlice = createSlice({
       const { missionId } = action.payload;
       return state.map((mission) => {
         if (mission.mission_id === missionId) {
-          console.log(action.payload);
           return { ...mission, reserved: true };
+        }
+        return mission;
+      });
+    },
+    leaveMission: (state, action) => {
+      const { missionId } = action.payload;
+      return state.map((mission) => {
+        if (mission.mission_id === missionId) {
+          return { ...mission, reserved: false };
         }
         return mission;
       });
@@ -20,6 +28,6 @@ const misionSlice = createSlice({
   },
 });
 
-export const { setMissions, joinMission } = misionSlice.actions;
+export const { setMissions, joinMission, leaveMission } = misionSlice.actions;
 
 export default misionSlice.reducer;
