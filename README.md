@@ -12,6 +12,7 @@ $ npm install redux react-redux redux-logger
 $ npm install react-router-dom
 $ npm install @reduxjs/toolkit
 $ npm install react-bootstrap bootstrap
+$ npm install --save-dev react-testing-library @testing-library/jest-dom jest
 
 ### Available Scripts
 In the project directory, you can run:
