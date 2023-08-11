@@ -30,6 +30,7 @@ const Missions = () => {
           dispatch(setMissions(data));
         }
       } catch (error) {
+      // eslint-disable-next-line
         console.error('Error fetching missions:', error);
       }
     };

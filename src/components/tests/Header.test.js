@@ -27,6 +27,6 @@ describe('Header component', () => {
 
     const rocketsLink = getByText('Rockets');
     expect(rocketsLink).toBeInTheDocument();
-    expect(rocketsLink.getAttribute('href')).toBe('./rockets');
+    expect(rocketsLink.getAttribute('href')).toBe('/rockets');
   });
 });

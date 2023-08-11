@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getRockets, cancelReservation, reserveRocket } from '../redux/RocketSlice';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Rockets = () => {
   const dispatch = useDispatch();
