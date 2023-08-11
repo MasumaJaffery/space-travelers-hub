@@ -6,6 +6,7 @@ import Profile from './components/Profile';
 import Missions from './components/missions/missionpage';
 import Rockets from './components/Rockets';
 import Footer from './components/Footer';
+import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <div>
         <Header />
         <Routes>
-          <Route path="/rockets" element={<Rockets />} />
+          <Route path="/" element={<Rockets />} />
           <Route path="/myprofile" element={<Profile />} />
           <Route path="/misions" element={<Missions />} />
         </Routes>

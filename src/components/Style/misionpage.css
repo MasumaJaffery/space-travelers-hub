@@ -2,10 +2,6 @@
   text-decoration: none;
 }
 
-.active {
-  text-decoration: underline;
-}
-
 .mission-table {
   width: 100%;
   border-collapse: collapse;
@@ -32,34 +28,49 @@
 
 .active-member-badge {
   background-color: rgb(44, 150, 145);
-  padding: 5px;
   border-radius: 5px;
   color: white;
+  padding: 5px;
   box-sizing: content-box;
+  box-sizing: inherit;
 }
 
 .not-member-badge {
   background-color: rgb(122, 126, 122);
-  padding: 5px;
   border-radius: 5px;
+  padding: 5px;
   color: white;
+  box-sizing: inherit;
 }
 
 .mission-status {
-  width: 150px;
+  width: 170px;
 }
 
 .mission-actioin {
-  width: 150px;
+  width: 170px;
 }
 
 .joined-missions {
-  list-style: none;
-  border: 0.5px solid gray;
-  width: 40%;
-  padding: 20px;
+  line-height: 2px;
+  padding: 12px;
 }
 
-.mission-jion-header {
-  margin-left: 4%;
+.navlist {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  text-decoration: none !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.active {
+  text-decoration: underline;
+  background-color: #2eb044;
+  padding: 2px;
+  border-radius: 2px;
+  color: white;
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { selectJoinedMissions } from '../redux/misionSlice';
+import './Style/profile.css';
 
 const Profile = () => {
   const joinedMissions = useSelector(selectJoinedMissions);
@@ -9,18 +10,25 @@ const Profile = () => {
 
   return (
     <div className="Profile-container">
-      <div>
+      <div className="Rockets-display">
         <h2 className="mission-jion-header">Joined Missions</h2>
-        <ul>
-          {joinedMissions.map((mission) => (
-            <li className="joined-missions" key={mission.mission_id}>
-              {mission.mission_name}
-            </li>
-          ))}
-        </ul>
+        <hr />
+        {joinedMissions.length > 0 ? (
+          <table>
+            <tbody>
+              {joinedMissions.map((mission) => (
+                <h6 key={mission.mission_id}>
+                  {mission.mission_name}
+                </h6>
+              ))}
+            </tbody>
+          </table>
+        ) : (
+          <p>No missions reserved yet</p>
+        )}
       </div>
       <div className="Rockets-display">
-        <h2>Rockets</h2>
+        <h2>Reserved Rockets</h2>
         <hr />
         {reservedRockets.length > 0 ? (
           <table>

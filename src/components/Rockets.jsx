@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getRockets, cancelReservation, reserveRocket } from '../redux/RocketSlice';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Rockets = () => {
   const dispatch = useDispatch();
@@ -15,7 +14,6 @@ const Rockets = () => {
 
   return (
     <div>
-      <h1>Rockets</h1>
       <div className="card mb-3" style={{ maxWidth: '90vw' }}>
         <div className="rockets__container d-flex-column">
           {rockets.length === 0 ? (
