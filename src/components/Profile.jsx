@@ -28,7 +28,7 @@ const Profile = () => {
         )}
       </div>
       <div className="Rockets-display">
-        <h2>Rockets</h2>
+        <h2>Reserved Rockets</h2>
         <hr />
         {reservedRockets.length > 0 ? (
           <table>

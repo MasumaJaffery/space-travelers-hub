@@ -15,7 +15,6 @@ const Rockets = () => {
 
   return (
     <div>
-      <h1>Rockets</h1>
       <div className="card mb-3" style={{ maxWidth: '90vw' }}>
         <div className="rockets__container d-flex-column">
           {rockets.length === 0 ? (

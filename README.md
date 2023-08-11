@@ -9,6 +9,8 @@ Run this command in Terminal;
 After cloning the repository you can run `npm install` to get dependencies.
 $ npm install redux react-redux redux-logger
 $ npm install react-router-dom
+for testing;
+$ npm install --save-dev jest @babel/preset-env @babel/preset-react react-test-renderer
 
 
 ### Available Scripts

@@ -12,9 +12,9 @@ const Header = () => (
         </div>
         <div>
           <ul className="navlist">
-            <NavLink to="./myprofile" activeClassName="nava active">My Profile</NavLink>
-            <NavLink to="/misions" activeClassName=" nava active">Mision</NavLink>
-            <NavLink to="./rockets" activeClassName="nava active">Rockets</NavLink>
+            <NavLink to="./myprofile" className="btn btn-outline-primary">My Profile</NavLink>
+            <NavLink to="/misions" className="btn btn-outline-primary">Mission</NavLink>
+            <NavLink to="./rockets" className="btn btn-outline-primary">Rockets</NavLink>
           </ul>
         </div>
       </nav>
