@@ -10,15 +10,20 @@ const Profile = () => {
 
   return (
     <div className="Profile-container">
-      <div>
+      <div className="Rockets-display">
         <h2 className="mission-jion-header">Joined Missions</h2>
-        <ul>
-          {joinedMissions.map((mission) => (
-            <li className="joined-missions" key={mission.mission_id}>
-              {mission.mission_name}
-            </li>
-          ))}
-        </ul>
+        <hr />
+        {joinedMissions.length > 0 ? (
+          <ul>
+            {joinedMissions.map((mission) => (
+              <h6 className="joined-missions" key={mission.mission_id}>
+                {mission.mission_name}
+              </h6>
+            ))}
+          </ul>
+        ) : (
+          <p>No missions reserved yet</p>
+        )}
       </div>
       <div className="Rockets-display">
         <h2>Rockets</h2>

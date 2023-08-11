@@ -4,10 +4,7 @@ import PropTypes from 'prop-types';
 const Mission = ({ mission }) => (
   <li>
     <div>
-      {mission.mission_name}
-      {' '}
-      -
-      {mission.reserved ? 'Reserved' : 'Not Reserved'}
+      {mission.mission_name} - {mission.reserved ? 'Reserved' : 'Not Reserved'}
     </div>
   </li>
 );

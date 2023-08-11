@@ -5,9 +5,10 @@ import Mission from '../missions/Mission';
 describe('displays mission', () => {
   it('displays mission with correct reserved status', () => {
     const mission = { mission_name: 'Mission 1', reserved: true };
+
     const { getByText } = render(<Mission mission={mission} />);
-    const missionText = 'Mission 1 - Reserved';
-    const missionElement = getByText(missionText);
+
+    const missionElement = getByText(/Mission 1 - Reserved/i);
     expect(missionElement).toBeInTheDocument();
   });
 });

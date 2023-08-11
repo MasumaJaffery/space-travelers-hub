@@ -48,10 +48,26 @@ ul {
   align-items: center;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  flex: 1;
+}
+
 footer {
   box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 10px; /* Optional padding for the footer */
+  background-color: #f8f8f8; /* Optional background color for the footer */
+  position: sticky;
+  bottom: 0;
 }
 
 .rockets__cancel-btn {
