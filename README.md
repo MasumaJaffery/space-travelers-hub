@@ -98,7 +98,7 @@ HTML+CSS+BOOTSTRAP+REACT+REDUX+GITHUB
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Project Link](https://sensational-rugelach-399e47.netlify.app/)
+- [Live Project Link](https://endearing-flan-d8189e.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
