@@ -1,0 +1,76 @@
+* {
+  text-decoration: none;
+}
+
+.mission-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #000;
+}
+
+.mission-table th,
+.mission-table td {
+  padding: 8px;
+  border: 1px solid #f2f2f2;
+}
+
+.mission-table th {
+  background-color: #f2f2f2;
+}
+
+.mission-table tr:nth-child(even) {
+  background-color: #fff;
+}
+
+.mission-table tr:nth-child(odd) {
+  background-color: #e9e9e9;
+}
+
+.active-member-badge {
+  background-color: rgb(44, 150, 145);
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+  box-sizing: content-box;
+  box-sizing: inherit;
+}
+
+.not-member-badge {
+  background-color: rgb(122, 126, 122);
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+  box-sizing: inherit;
+}
+
+.mission-status {
+  width: 170px;
+}
+
+.mission-actioin {
+  width: 170px;
+}
+
+.joined-missions {
+  line-height: 2px;
+  padding: 12px;
+}
+
+.navlist {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  text-decoration: none !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.active {
+  text-decoration: underline;
+  background-color: #2eb044;
+  padding: 2px;
+  border-radius: 2px;
+  color: white;
+}

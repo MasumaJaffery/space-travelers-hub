@@ -1,0 +1,9 @@
+.Profile-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 80vh;
+}
+
+footer a {
+  color: gray;
+}

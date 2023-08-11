@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the Empty Missions component correctly 1`] = `
+<div>
+  <div>
+    <div
+      class="card mb-3"
+      style="max-width: 90vw;"
+    >
+      <div
+        class="rockets__container d-flex-column"
+      >
+        <ul
+          class="rocketslist"
+        >
+          <li
+            class="rocketsitems"
+          >
+            <div
+              class="row g-0"
+            >
+              <div
+                class="col-md-4"
+              >
+                <img
+                  alt="Falcon 1"
+                  class="img-fluid rounded-start"
+                  src="https://imgur.com/DaCfMsj.jpg"
+                />
+              </div>
+              <div
+                class="col-md-8"
+              >
+                <div
+                  class="card-body"
+                >
+                  <h3
+                    class="card-title"
+                  />
+                  <p
+                    class="card-text"
+                  >
+                    <div
+                      class="btn-rocket"
+                    />
+                    The Falcon 1 was an expendable launch system privately developed and manufactured by SpaceX during 2006-2009. On 28 September 2008, Falcon 1 became the first privately-developed liquid-fuel launch vehicle to go into orbit around the Earth.
+                  </p>
+                  <div>
+                    <button
+                      class="rockets__reserve-btn btn btn-primary"
+                      type="button"
+                    >
+                      Reserve Rocket
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li
+            class="rocketsitems"
+          >
+            <div
+              class="row g-0"
+            >
+              <div
+                class="col-md-4"
+              >
+                <img
+                  alt="Falcon 9"
+                  class="img-fluid rounded-start"
+                  src="https://farm1.staticflickr.com/929/28787338307_3453a11a77_b.jpg"
+                />
+              </div>
+              <div
+                class="col-md-8"
+              >
+                <div
+                  class="card-body"
+                >
+                  <h3
+                    class="card-title"
+                  />
+                  <p
+                    class="card-text"
+                  >
+                    <div
+                      class="btn-rocket"
+                    />
+                    Falcon 9 is a two-stage rocket designed and manufactured by SpaceX for the reliable and safe transport of satellites and the Dragon spacecraft into orbit.
+                  </p>
+                  <div>
+                    <button
+                      class="rockets__reserve-btn btn btn-primary"
+                      type="button"
+                    >
+                      Reserve Rocket
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+`;
