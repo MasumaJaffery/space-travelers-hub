@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { selectJoinedMissions } from '../redux/misionSlice';
+import './Style/profile.css';
 
 const Profile = () => {
   const joinedMissions = useSelector(selectJoinedMissions);
