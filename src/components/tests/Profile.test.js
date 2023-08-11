@@ -20,7 +20,7 @@ describe('Profile component', () => {
     const { getByText, queryByText } = render(
       <Provider store={store}>
         <Profile />
-      </Provider>
+      </Provider>,
     );
 
     expect(getByText('Profile')).toBeInTheDocument();
