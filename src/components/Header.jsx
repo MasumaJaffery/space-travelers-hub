@@ -14,7 +14,7 @@ const Header = () => (
           <ul className="navlist">
             <NavLink to="./myprofile" className="btn btn-outline-primary">My Profile</NavLink>
             <NavLink to="/misions" className="btn btn-outline-primary">Mission</NavLink>
-            <NavLink to="./rockets" className="btn btn-outline-primary">Rockets</NavLink>
+            <NavLink to="/" className="btn btn-outline-primary">Rockets</NavLink>
           </ul>
         </div>
       </nav>
