@@ -7,9 +7,11 @@ $ npx create-react-app .
 ## Install Dependencies
 Run this command in Terminal;
 After cloning the repository you can run `npm install` to get dependencies.
+$ npm install react react-dom
 $ npm install redux react-redux redux-logger
 $ npm install react-router-dom
-
+$ npm install @reduxjs/toolkit
+$ npm install react-bootstrap bootstrap
 
 ### Available Scripts
 In the project directory, you can run:
