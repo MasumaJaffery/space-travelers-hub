@@ -16,13 +16,29 @@ const Missions = () => {
       try {
         const response = await fetch('https://api.spacexdata.com/v3/missions');
         const data = await response.json();
-        dispatch(setMissions(data));
+
+        const localStorageMissions = JSON.parse(localStorage.getItem('missions'));
+        if (localStorageMissions) {
+          const updatedMissions = data.map((mission) => {
+            const localStorageMission = localStorageMissions.find(
+              (localStorageMission) => localStorageMission.mission_id === mission.mission_id,
+            );
+            return localStorageMission || mission;
+          });
+          dispatch(setMissions(updatedMissions));
+        } else {
+          dispatch(setMissions(data));
+        }
       } catch (error) {
-        Error('Error fetching missions:', error);
+        console.error('Error fetching missions:', error);
       }
     };
     fetchMissions();
   }, [dispatch]);
+
+  useEffect(() => {
+    localStorage.setItem('missions', JSON.stringify(missions));
+  }, [missions]);
 
   const handleJoinMission = (missionId) => {
     dispatch(joinMission({ missionId }));

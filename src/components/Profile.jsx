@@ -14,13 +14,15 @@ const Profile = () => {
         <h2 className="mission-jion-header">Joined Missions</h2>
         <hr />
         {joinedMissions.length > 0 ? (
-          <ul>
-            {joinedMissions.map((mission) => (
-              <h6 className="joined-missions" key={mission.mission_id}>
-                {mission.mission_name}
-              </h6>
-            ))}
-          </ul>
+          <table>
+            <tbody>
+              {joinedMissions.map((mission) => (
+                <h6 key={mission.mission_id}>
+                  {mission.mission_name}
+                </h6>
+              ))}
+            </tbody>
+          </table>
         ) : (
           <p>No missions reserved yet</p>
         )}
