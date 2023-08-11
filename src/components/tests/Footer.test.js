@@ -14,7 +14,6 @@ describe('Footer', () => {
 
     expect(githubLink2).toBeInTheDocument();
     expect(githubLink2.href).toBe('https://github.com/najibullahjafari');
-
   });
 
   it('has the correct class name', () => {

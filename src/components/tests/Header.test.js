@@ -8,7 +8,7 @@ describe('Header component', () => {
     const { getByText, getByAltText } = render(
       <MemoryRouter>
         <Header />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
 
     const logoImage = getByAltText('logo');
