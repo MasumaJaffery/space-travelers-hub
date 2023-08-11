@@ -2,6 +2,10 @@
   "name": "space-travelers-hub",
   "version": "0.1.0",
   "private": true,
+   "jest": {
+    "moduleNameMapper": {
+      "axios": "axios/dist/axios"
+    },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/react": "^13.4.0",
@@ -62,4 +66,5 @@
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0"
   }
+}
 }
