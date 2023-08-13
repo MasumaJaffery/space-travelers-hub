@@ -1,5 +1,11 @@
+/* some genral styles */
+
 * {
   text-decoration: none;
+}
+
+a {
+  text-decoration: none !important;
 }
 
 .mission-table {
@@ -63,8 +69,8 @@
   text-decoration: none !important;
 }
 
-a {
-  text-decoration: none !important;
+.mission-con {
+  margin: 0 100px;
 }
 
 .active {
